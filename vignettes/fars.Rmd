@@ -1,0 +1,52 @@
+---
+title: "This is my First R Package"
+author: "Carlos"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{This is my First R Package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# US FARS (Fatality Analysis Recording System)
+
+This packages aims to produce simples graphics to show the accidents in US territory.
+
+## The `make_filename` function
+
+This function generates the filename.
+
+## The `fars_read` function
+
+The `fars_read` will use as input the filename string from `make_filename`.
+
+Based on the archives from US FARS are located in the documents folder.
+
+## The `fars_read_years` function
+
+This functions goes further and use the both functions (`make_filename` and `fars_read`) to generate a list.
+
+## The `fars_summarize_years` function
+
+This functions print a summary.
+
+## The `fars_map_state` function
+
+Plot a Graphic of each State of US.
+
+# Dependencies
+
+* dplyr
+* readr
+* magrittr
+* tidyr
+* graphics
+* maps

@@ -1,0 +1,30 @@
+Package: fars
+Type: Package
+Title: FARS building package assignment
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Carlos", "Doe",
+      email = "jane@example.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: This package has 5 functions. One to visualize the output (fars_map_state), One to data summarization
+    (fars_summarize_years), and the other 3 functions to load the dataset (fars_read and fars_read_years) and to
+    generate the filename properly (make_filename).
+License: GPL3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr,
+    maps,
+    readr,
+    tidyr,
+    rlang,
+    testthat
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
